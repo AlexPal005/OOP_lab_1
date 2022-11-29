@@ -1,3 +1,5 @@
+package Auto;
+
 import java.util.List;
 import java.util.Scanner;
 
@@ -34,10 +36,12 @@ public class Menu {
     }
     private void display_menu() {
         System.out.println();
+        System.out.println("-------------Меню--------------");
         System.out.println("1. Порахувати вартість автопарку");
         System.out.println("2. Відсортувати автомобілі за витратою палива");
         System.out.println("3. Знайти автомобілі з максимальною швидкістю в заданому діапазоні");
         System.out.println("4. Показати список автомобілів");
+        System.out.print("Оберіть номер меню: ");
     }
     private void first(){
         System.out.println("Вартість автопарку: " + auto_park.get_all_price() + "$");

@@ -1,3 +1,5 @@
+package Auto;
+
 public class Car {
     private String manufacturer;
     private String model;

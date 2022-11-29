@@ -1,4 +1,8 @@
-public class GasilineCar extends Car{
+package Type_cars;
+
+import Auto.Car;
+
+public class GasilineCar extends Car {
     private boolean automatic_transmission;
     private double engine_capacity;
     public GasilineCar(String manufacturer, String model, int year, double price, double mileage,

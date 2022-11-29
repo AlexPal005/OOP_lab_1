@@ -1,3 +1,5 @@
+package Auto;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,6 +32,9 @@ public class AutoPark{
         for (Car car: cars ) {
             System.out.println(car + "\n");
         }
+    }
+    public List<Car> getCars(){
+        return cars;
     }
 
 }

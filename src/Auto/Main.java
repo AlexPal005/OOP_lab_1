@@ -1,3 +1,9 @@
+package Auto;
+
+import Type_cars.Bus;
+import Type_cars.ElectricCar;
+import Type_cars.GasilineCar;
+
 import java.util.ArrayList;
 import java.util.List;
 

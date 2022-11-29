@@ -1,3 +1,5 @@
+package Auto;
+
 import java.util.Comparator;
 
 public class FuelComparator implements Comparator<Car> {

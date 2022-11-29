@@ -1,4 +1,8 @@
-public class Bus extends Car{
+package Type_cars;
+
+import Auto.Car;
+
+public class Bus extends Car {
     private int number_passengers;
     public Bus(String manufacturer, String model, int year, double price, double mileage,
                boolean air_conditioning, boolean was_in_accident, double fuel_consumption,

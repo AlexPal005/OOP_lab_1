@@ -1,4 +1,8 @@
-public class ElectricCar extends Car{
+package Type_cars;
+
+import Auto.Car;
+
+public class ElectricCar extends Car {
     private double engine_power;
     private double distance_one_charge;
     public ElectricCar(String manufacturer, String model, int year, double price, double mileage,
