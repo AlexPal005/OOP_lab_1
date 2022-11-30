@@ -3,36 +3,36 @@ package Type_cars;
 import Auto.Car;
 
 public class ElectricCar extends Car {
-    private double engine_power;
-    private double distance_one_charge;
+    private double enginePower;
+    private double distanceOneCharge;
     public ElectricCar(String manufacturer, String model, int year, double price, double mileage,
-                       boolean air_conditioning, boolean was_in_accident, double fuel_consumption,
-                       double max_speed, double engine_power, double distance_one_charge){
+                       boolean airConditioning, boolean wasInAccident, double fuelConsumption,
+                       double maxSpeed, double enginePower, double distanceOneCharge){
 
-        super(manufacturer, model, year, price,mileage,air_conditioning,was_in_accident,fuel_consumption, max_speed);
-        this.engine_power = engine_power;
-        this.distance_one_charge = distance_one_charge;
+        super(manufacturer, model, year, price,mileage,airConditioning,wasInAccident,fuelConsumption, maxSpeed);
+        this.enginePower = enginePower;
+        this.distanceOneCharge = distanceOneCharge;
     }
 
     @Override
     public String toString() {
         return super.toString() + "\n" +
-                "Engine power:           " + engine_power + "\n" +
-                "Distance on one charge: " + distance_one_charge + "\n" +
+                "Engine power:           " + enginePower + "\n" +
+                "Distance on one charge: " + distanceOneCharge + "\n" +
                 "Type:                   electric car";
     }
 
-    public void setEngine_power(double engine_power) {
-        this.engine_power = engine_power;
+    public void setEnginePower(double enginePower) {
+        this.enginePower = enginePower;
     }
-    public void setDistance_one_charge(double distance_one_charge) {
-        this.distance_one_charge = distance_one_charge;
+    public void setDistanceOneCharge(double distanceOneCharge) {
+        this.distanceOneCharge = distanceOneCharge;
     }
 
-    public double getEngine_power() {
-        return engine_power;
+    public double getEnginePower() {
+        return enginePower;
     }
-    public double getDistance_one_charge() {
-        return distance_one_charge;
+    public double getDistanceOneCharge() {
+        return distanceOneCharge;
     }
 }

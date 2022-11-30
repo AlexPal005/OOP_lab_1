@@ -3,27 +3,27 @@ package Type_cars;
 import Auto.Car;
 
 public class Bus extends Car {
-    private int number_passengers;
+    private int numberPassengers;
     public Bus(String manufacturer, String model, int year, double price, double mileage,
                boolean air_conditioning, boolean was_in_accident, double fuel_consumption,
-               double max_speed, int number_passengers){
+               double max_speed, int numberPassengers){
 
         super(manufacturer, model, year, price,mileage,air_conditioning,was_in_accident,fuel_consumption, max_speed);
-        this.number_passengers = number_passengers;
+        this.numberPassengers = numberPassengers;
     }
 
     @Override
     public String toString() {
         return super.toString() + "\n" +
-                "Number of passengers:   " + number_passengers + "\n" +
+                "Number of passengers:   " + numberPassengers + "\n" +
                 "Type:                   bus";
     }
 
-    public void setNumber_passengers(int number_passengers) {
-        this.number_passengers = number_passengers;
+    public void setNumberPassengers(int numberPassengers) {
+        this.numberPassengers = numberPassengers;
     }
 
-    public int getNumber_passengers() {
-        return number_passengers;
+    public int getNumberPassengers() {
+        return numberPassengers;
     }
 }

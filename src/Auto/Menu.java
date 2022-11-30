@@ -4,11 +4,11 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Menu {
-    private AutoPark auto_park;
+    private AutoPark autoPark;
     private List<Car> cars;
     private Scanner in;
-    public Menu(AutoPark auto_park, List<Car> cars){
-        this.auto_park = auto_park;
+    public Menu(AutoPark autoPark, List<Car> cars){
+        this.autoPark = autoPark;
         this.cars = cars;
         in = new Scanner(System.in);
     }
@@ -44,12 +44,12 @@ public class Menu {
         System.out.print("Оберіть номер меню: ");
     }
     private void first(){
-        System.out.println("Вартість автопарку: " + auto_park.get_all_price() + "$");
+        System.out.println("Вартість автопарку: " + autoPark.get_all_price() + "$");
     }
     private void second(){
-        auto_park.sort_by_fuel_consumption();
+        autoPark.sort_by_fuel_consumption();
         System.out.println("Відсортований список автомобілів: ");
-        auto_park.show_cars(cars);
+        autoPark.show_cars(cars);
     }
     private void third(){
         System.out.println("Уведіть початкове значення діапазону швидкості: ");
@@ -58,16 +58,16 @@ public class Menu {
         System.out.println("Уведіть кінцеве значення діапазону швидкості: ");
         double max = in.nextDouble();
         in.nextLine();
-        List<Car> res_list = auto_park.get_car_by_speed(min,max);
+        List<Car> res_list = autoPark.get_car_by_speed(min,max);
         if(res_list.size() == 0){
             System.out.println("Нічого не  знайдено!");
         }
         else{
             System.out.println("Автомобілі: ");
-            auto_park.show_cars(res_list);
+            autoPark.show_cars(res_list);
         }
     }
     private void fourth(){
-        auto_park.show_cars(cars);
+        autoPark.show_cars(cars);
     }
 }

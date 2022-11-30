@@ -3,36 +3,36 @@ package Type_cars;
 import Auto.Car;
 
 public class GasilineCar extends Car {
-    private boolean automatic_transmission;
-    private double engine_capacity;
+    private boolean automaticTransmission;
+    private double engineCapacity;
     public GasilineCar(String manufacturer, String model, int year, double price, double mileage,
                        boolean air_conditioning, boolean was_in_accident, double fuel_consumption, double max_speed,
-                       boolean automatic_transmission, double engine_capacity){
+                       boolean automaticTransmission, double engineCapacity){
 
         super(manufacturer, model, year, price,mileage,air_conditioning,was_in_accident,fuel_consumption, max_speed);
-        this.automatic_transmission = automatic_transmission;
-        this.engine_capacity = engine_capacity;
+        this.automaticTransmission = automaticTransmission;
+        this.engineCapacity = engineCapacity;
     }
 
     @Override
     public String toString() {
         return super.toString() + "\n" +
-                "Automatic transmission: " + automatic_transmission + "\n" +
-                "Engine capacity:        " + engine_capacity + "\n" +
+                "Automatic transmission: " + automaticTransmission + "\n" +
+                "Engine capacity:        " + engineCapacity + "\n" +
                 "Type:                   gasoline car";
     }
 
-    public void setAutomatic_transmission(boolean automatic_transmission) {
-        this.automatic_transmission = automatic_transmission;
+    public void setAutomaticTransmission(boolean automaticTransmission) {
+        this.automaticTransmission = automaticTransmission;
     }
-    public void setEngine_capacity(double engine_capacity) {
-        this.engine_capacity = engine_capacity;
+    public void setEngineCapacity(double engineCapacity) {
+        this.engineCapacity = engineCapacity;
     }
 
-    public boolean getAutomatic_transmission(){
-        return automatic_transmission;
+    public boolean getAutomaticTransmission(){
+        return automaticTransmission;
     }
-    public double getEngine_capacity() {
-        return engine_capacity;
+    public double getEngineCapacity() {
+        return engineCapacity;
     }
 }

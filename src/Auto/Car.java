@@ -1,26 +1,26 @@
 package Auto;
 
-public class Car {
+public abstract class Car {
     private String manufacturer;
     private String model;
     private int year;
     private double price;
     private double mileage;
-    private boolean air_conditioning;
-    private boolean was_in_accident;
-    private double fuel_consumption;
-    private double max_speed;
+    private boolean airСonditioning;
+    private boolean wasInAccident;
+    private double fuelConsumption;
+    private double maxSpeed;
     public Car(String manufacturer, String model, int year, double price, double mileage,
-               boolean air_conditioning, boolean was_in_accident, double fuel_consumption, double max_speed){
+               boolean airСonditioning, boolean wasInAccident, double fuelConsumption, double maxSpeed){
         this.manufacturer = manufacturer;
         this.model = model;
         this.year = year;
         this.price = price;
         this.mileage = mileage;
-        this.air_conditioning = air_conditioning;
-        this.was_in_accident = was_in_accident;
-        this.fuel_consumption = fuel_consumption;
-        this.max_speed = max_speed;
+        this.airСonditioning = airСonditioning;
+        this.wasInAccident = wasInAccident;
+        this.fuelConsumption = fuelConsumption;
+        this.maxSpeed = maxSpeed;
     }
 
     @Override
@@ -30,10 +30,10 @@ public class Car {
                "Year:                   " + year + "\n" +
                "Price:                  " + price + "\n" +
                "Mileage:                " + mileage + "\n" +
-               "Air conditioning:       " + air_conditioning + "\n" +
-               "Was in an accident:     " + was_in_accident + "\n" +
-               "Fuel consumption:       " + fuel_consumption + "\n" +
-                "Max speed:              " + max_speed;
+               "Air conditioning:       " + airСonditioning + "\n" +
+               "Was in an accident:     " + wasInAccident + "\n" +
+               "Fuel consumption:       " + fuelConsumption + "\n" +
+                "Max speed:              " + maxSpeed;
     }
 
     public void setManufacturer(String manufacturer) {
@@ -51,17 +51,17 @@ public class Car {
     public void setMileage(double mileage) {
         this.mileage = mileage;
     }
-    public void setAir_conditioning(boolean air_conditioning) {
-        this.air_conditioning = air_conditioning;
+    public void setAirСonditioning(boolean airСonditioning) {
+        this.airСonditioning = airСonditioning;
     }
-    public void setWas_in_accident(boolean was_in_accident) {
-        this.was_in_accident = was_in_accident;
+    public void setWasInAccident(boolean wasInAccident) {
+        this.wasInAccident = wasInAccident;
     }
-    public void setFuel_consumption(double fuel_consumption) {
-        this.fuel_consumption = fuel_consumption;
+    public void setFuelConsumption(double fuelConsumption) {
+        this.fuelConsumption = fuelConsumption;
     }
-    public void setMax_speed(double max_speed) {
-        this.max_speed = max_speed;
+    public void setMaxSpeed(double maxSpeed) {
+        this.maxSpeed = maxSpeed;
     }
 
 
@@ -80,16 +80,16 @@ public class Car {
     public double getMileage() {
         return mileage;
     }
-    public boolean getAir_conditioning(){
-        return air_conditioning;
+    public boolean getAirСonditioning(){
+        return airСonditioning;
     }
-    public boolean getWas_in_accident(){
-        return was_in_accident;
+    public boolean getWasInAccident(){
+        return wasInAccident;
     }
-    public double getFuel_consumption() {
-        return fuel_consumption;
+    public double getFuelConsumption() {
+        return fuelConsumption;
     }
-    public double getMax_speed() {
-        return max_speed;
+    public double getMaxSpeed() {
+        return maxSpeed;
     }
 }

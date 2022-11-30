@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AutoPark{
-    private List<Car> cars;
+    private final List<Car> cars;
     public AutoPark(List<Car> cars){
         this.cars = cars;
     }
@@ -22,7 +22,7 @@ public class AutoPark{
     public List<Car> get_car_by_speed(double speed_min, double speed_max){
         List<Car> res_cars = new ArrayList<>();
         for (Car car: cars) {
-            if(car.getMax_speed() >= speed_min && car.getMax_speed() <= speed_max){
+            if(car.getMaxSpeed() >= speed_min && car.getMaxSpeed() <= speed_max){
                 res_cars.add(car);
             }
         }
